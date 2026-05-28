@@ -1,0 +1,14 @@
+# Nested git repos
+agi-disclosure/
+
+# SQLite (regeneratable)
+LATTICE/TRIAD_LATTICE/lattice.db
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+*.swp

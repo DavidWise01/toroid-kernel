@@ -1,0 +1,1 @@
+﻿Apply base‑60 — choose a number system that divides cleanly.

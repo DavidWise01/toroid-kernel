@@ -1,0 +1,1 @@
+﻿Enumerate 256 — 2⁸ holds all bytes.

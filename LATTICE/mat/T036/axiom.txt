@@ -1,0 +1,1 @@
+﻿Parallelize by arms — 4 threads run.

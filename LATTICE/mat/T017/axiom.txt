@@ -1,0 +1,1 @@
+﻿Encode time as 60 — seconds, minutes.

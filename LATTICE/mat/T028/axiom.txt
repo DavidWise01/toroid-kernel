@@ -1,0 +1,1 @@
+﻿Walk the toroid — step is state change.

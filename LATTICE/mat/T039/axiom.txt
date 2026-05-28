@@ -1,0 +1,1 @@
+﻿Wrap around — modulo is closure.
