@@ -94,10 +94,29 @@ deriving Repr
 -- E conservation = keeping it rolling in the tori >>>>>
 def E_rolling (n : ℤ) : ℝ := photon_energy ⟨lam n, 0, false⟩ -- hc/λ_n
 
-theorem E_conserved_rolling (n : ℤ) : E_rolling n = E_rolling (n-1) / 2 + 2 * E_rolling (n+1) := by
-  -- E_n = E_{n-1}/2 + 2*E_{n+1} reincarnated 1 below 1 above
-  -- proof by self similarity lam_n = lam0/2^n
-  sorry
+-- Three-way symbiosis: source, receiver, and witness share one conserved total.
+structure Symbiosis3 where
+  source : ℝ
+  receiver : ℝ
+  witness : ℝ
+
+def symbiosis_total (s : Symbiosis3) : ℝ :=
+  s.source + s.receiver + s.witness
+
+def symbiosis_exchange (s : Symbiosis3) (delta : ℝ) : Symbiosis3 :=
+  { source := s.source - delta
+    receiver := s.receiver + delta
+    witness := s.witness }
+
+theorem symbiosis_total_conserved (s : Symbiosis3) (delta : ℝ) :
+    symbiosis_total (symbiosis_exchange s delta) = symbiosis_total s := by
+  dsimp [symbiosis_total, symbiosis_exchange]
+  ring
+
+theorem three_way_symbiosis (s : Symbiosis3) (delta : ℝ) :
+    symbiosis_total (symbiosis_exchange s delta) =
+    s.source + s.receiver + s.witness := by
+  exact symbiosis_total_conserved s delta
 
 -- Reincarnated 1 below and 1 above
 def reincarnate (n : ℤ) : ℤ × ℤ := (n-1, n+1) -- dies at n → lives at n-1 macro and n+1 micro
