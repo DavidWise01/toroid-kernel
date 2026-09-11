@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Petals · ToroidKernel</title>
+<style>
+body{margin:0;background:#0b1020;color:#e8edff;font:16px system-ui,sans-serif}
+main{max-width:760px;margin:auto;padding:48px 22px}
+h1{color:#72e6ff} h2{color:#ff85d5}
+.card{border:1px solid #315070;border-radius:14px;padding:20px;margin:18px 0;background:#101a30}
+code{color:#b9ffb0} a{color:#72e6ff}
+.flow{font:700 18px monospace;color:#ff85d5;text-align:center;padding:18px}
+small{color:#9daac7}
+</style></head>
+<body><main>
+<p><a href="../">← toroid-kernel</a></p>
+<h1>Petals network contract</h1>
+<p>A deliberately small, auditable control layer for future physics/network workloads.</p>
+<div class="flow">REQUEST → POLICY GATE → APPROVED PEER → FUTURE TRANSPORT</div>
+<div class="card"><h2>P1–P5 · foundation</h2><p>Node contract, block assignment, backend-neutral blocks, overlay, and client configuration.</p></div>
+<div class="card"><h2>P6 · peer policy</h2><p>Public discovery is denied by default. A peer must be explicitly allowlisted before a transport implementation may use it.</p><p><code>approved_peers = { "peer.home" }</code></p></div>
+<div class="card"><h2>What this does not do</h2><p>No sockets. No swarm joining. No GPU worker. No silent bandwidth or compute sharing.</p></div>
+<p><small>Source: <a href="https://github.com/DavidWise01/toroid-kernel/tree/main/petals">petals/</a></small></p>
+</main></body></html>
