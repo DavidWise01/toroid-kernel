@@ -29,7 +29,7 @@ theorem cleave_1_v_accepts_all_pass (pass : VStage → Bool)
 theorem cleave_1_v_rejects_failed_stage (pass : VStage → Bool) (failed : VStage)
     (hfail : pass failed = false) :
     allVStagesPass pass = false := by
-  cases failed <;> simp [allVStagesPass, VStages] at hfail ⊢
+  cases failed <;> simp_all [allVStagesPass, VStages]
 
 theorem cleave_1_v_has_twelve_stages : VStages.length = 12 := by
   rfl
