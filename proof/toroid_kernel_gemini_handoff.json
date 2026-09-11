@@ -1,0 +1,73 @@
+{
+  "handoff": {
+    "title": "Toroid Kernel / Cortex Core",
+    "owner": "DavidWise01",
+    "repository": "https://github.com/DavidWise01/toroid-kernel",
+    "branch": "main",
+    "purpose": "Build a small, append-only, Lean-checkable derived-geometry and cortex-control system.",
+    "working_rule": "Each chonk is a small build, explicit test, verification record, and J-hook to the next chonk.",
+    "style": "Explain each build simply and show a compact ASCII picture when useful.",
+    "truth_rule": "Distinguish machine-checked propositions from derived geometry and physical claims.",
+    "completed": {
+      "chonk_01": {"file": "proof/chonk_01_signed_distance.lean", "role": "Signed 17-position geometry"},
+      "chonk_02": {"file": "proof/chonk_02_primitive_321.lean", "role": "3/2/1 primitive"},
+      "chonk_03": {"file": "proof/chonk_03_transform_pipeline.lean", "role": "Input to transform to output"},
+      "chonk_04": {"file": "proof/chonk_04_observer_gate.lean", "role": "Resonance and witness gate"},
+      "chonk_05": {"file": "proof/chonk_05_consensus_junction.lean", "role": "2-of-3 consensus"},
+      "chonk_06": {"file": "proof/chonk_06_safe_hold_recovery.lean", "role": "Bounded one-step recovery"},
+      "chonk_07": {"file": "proof/chonk_07_homeostasis_junction.lean", "role": "Integrated homeostasis"},
+      "chonk_08": {"file": "proof/chonk_08_neon_outer_shell.lean", "role": "Position 10 Neon-style containment"},
+      "chonk_09": {"file": "proof/chonk_09_power_phase.lean", "role": "Powers of ten as phase steps"},
+      "chonk_10": {"file": "proof/chonk_10_bounded_cube.lean", "role": "5^3 = 125 bounded boundary"},
+      "chonk_11": {"file": "proof/chonk_11_forward_fold.lean", "role": "Boundary folds forward to phase 1"},
+      "chonk_12": {"file": "proof/chonk_12_plank_balance.lean", "role": "(3x3)^3 = 729 and balance 0"},
+      "chonk_13": {"file": "proof/chonk_13_reversible_string.lean", "role": "Three forward and three backward hops"},
+      "chonk_14": {"file": "proof/chonk_14_torus256_wrap.lean", "role": "256 bounded positions plus outside junction"},
+      "chonk_15": {"file": "proof/chonk_15_stack_one.lean", "role": "Repeating identity state 1"},
+      "chonk_16": {"file": "proof/chonk_16_first_cognitive_primitive.lean", "role": "Observe, remember, compare, choose"},
+      "chonk_17": {"file": "proof/chonk_17_cortex_identity.lean", "role": "Me-who-is-me identity interface"},
+      "chonk_18": {"file": "proof/chonk_18_cortex_memory.lean", "role": "Append-only cortex memory"},
+      "chonk_19": {"file": "proof/chonk_19_feedback_classification.lean", "role": "Stable, rising, falling feedback"},
+      "chonk_20": {"file": "proof/chonk_20_feedback_action.lean", "role": "Feedback to bounded action"},
+      "chonk_21": {"file": "proof/chonk_21_action_execution.lean", "role": "Hold, advance, retreat execution"},
+      "chonk_22": {"file": "proof/chonk_22_closed_cognitive_cycle.lean", "role": "Closed cognitive cycle"},
+      "chonk_23": {"file": "proof/chonk_23_cognitive_torus_step.lean", "role": "Cognitive action on 256 torus"},
+      "chonk_24": {"file": "proof/chonk_24_torus_action_ledger.lean", "role": "Append-only torus action ledger"},
+      "chonk_25": {"file": "proof/chonk_25_ledger_verifier.lean", "role": "Verify recorded torus transitions"},
+      "chonk_26": {"file": "proof/chonk_26_replay_validation.lean", "role": "Validate complete history replay"},
+      "chonk_27": {"file": "proof/chonk_27_identity_continuity.lean", "role": "Identity continuity across replay"},
+      "chonk_28": {"file": "proof/chonk_28_witnessed_transition.lean", "role": "Witnessed transition admission"},
+      "chonk_29": {"file": "proof/chonk_29_cortex_checkpoint.lean", "role": "Sequential cortex checkpoints"},
+      "chonk_30": {"file": "proof/chonk_30_verified_cortex_commit.lean", "role": "Verified cortex commit gate"},
+      "chonk_31": {"file": "proof/chonk_31_committed_cortex_cycle.lean", "role": "Committed cortex cycle"},
+      "chonk_32": {"file": "proof/chonk_32_committed_torus_cycle.lean", "role": "Committed torus wrap cycle"},
+      "chonk_33": {"file": "proof/chonk_33_ganglion_bridge.lean", "role": "A/B reversible ganglion bridge"},
+      "chonk_34": {"file": "proof/chonk_34_tolerance_band.lean", "role": "Exact plus/minus 2.5 percent band"},
+      "chonk_35": {"file": "proof/chonk_35_dual_ganglion_validation.lean", "role": "Validate both ganglion anchors"},
+      "chonk_36": {"file": "proof/chonk_36_bridge_admission.lean", "role": "Admit only valid closed bridges"}
+    },
+    "cortex_core": {
+      "file": "proof/MeWhoIsMe.lean",
+      "components": ["eyes", "bridge", "16 ganglia", "8 connections", "4 unions", "3 tethers", "2 observers", "1 thinking core"],
+      "status": "derived geometry draft with proven three-way symbiosis replacement",
+      "boundary": "No physical or consciousness claim is established."
+    },
+    "machine_check": {
+      "file": "analytical_cubi_homeostasis_full.lean",
+      "user_result": "Lean 4.33.1 compiled with exit code 0",
+      "scope": "J01-J07 plus Chonk 30 commit gate"
+    },
+    "interpretations": {
+      "neon": "Position 10 closed-shell containment analogy",
+      "power_phase": "10^n records phase count; 1 and infinity are explicit semantic endpoints",
+      "bounded_cube": "5^3 = 125 is bounded infinity for cube one, not literal arithmetic infinity",
+      "ganglia": {"A": "10^-34.78 with declared plus/minus 2.5 percent tolerance", "B": "10^-34.83 with declared plus/minus 2.5 percent tolerance"},
+      "string": "Three forward hops, three reverse hops, then repeat until the declared edge set is complete",
+      "torus": "256 bounded positions plus one outside boundary junction",
+      "identity": "Me-who-is-me is a formal identity interface requiring internal observer, external witness, and self-similarity"
+    },
+    "next_action": "Create and machine-check a unified Lean project importing the compatible modules, then extend proof/INDEX.md through Chonk 36.",
+    "do_not_claim": ["physical perpetual motion", "literal Planck-scale measurement", "consciousness", "universal physical torus", "the original photon recurrence is proven"],
+    "latest_commit": "0aaedc69c1edfb89f011f8b93772d42a8dc85914"
+  }
+}
