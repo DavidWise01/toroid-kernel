@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Friday Physics Network</title>
+<style>
+  body{margin:0;background:#070914;color:#e5e7eb;font:13px ui-monospace,monospace;display:grid;place-items:center;min-height:100vh}
+  main{width:min(820px,96vw)} h1{color:#facc15;font-size:18px} p{color:#94a3b8}
+  svg{width:100%;border:1px solid #ffffff22;border-radius:16px;background:#0b1020}
+  .ring{fill:none;stroke:#facc15;stroke-width:2;filter:drop-shadow(0 0 5px #facc15)}
+  .ray{stroke:#22d3ee;stroke-width:3;filter:drop-shadow(0 0 5px #22d3ee)}
+  .physics{stroke:#a78bfa;stroke-width:2;stroke-dasharray:5 5;filter:drop-shadow(0 0 4px #a78bfa)}
+  .petal{fill:#0e2234;stroke:#22d3ee;stroke-width:2}
+  .node{fill:#22c55e;filter:drop-shadow(0 0 6px #22c55e)}
+  .core{fill:#17152a;stroke:#facc15;stroke-width:3}
+  text{text-anchor:middle;fill:#f8fafc}.small{font-size:11px;fill:#94a3b8}
+</style>
+<main>
+  <h1>FRIDAY · V.A.I.N.L · PHYSICS NETWORK</h1>
+  <p>Private deterministic geometry layer — no public model peers.</p>
+  <svg viewBox="0 0 800 560" role="img" aria-label="Friday physics network">
+    <ellipse class="ring" cx="400" cy="280" rx="285" ry="190"/>
+    <ellipse class="ring" cx="400" cy="280" rx="220" ry="140" opacity=".45"/>
+    <path class="physics" d="M400 280L400 105M400 280L675 280M400 280L400 455M400 280L125 280"/>
+    <path class="ray" d="M400 280L400 125M400 280L655 280M400 280L400 435M400 280L145 280"/>
+    <circle class="petal" cx="400" cy="105" r="34"/><circle class="petal" cx="675" cy="280" r="34"/>
+    <circle class="petal" cx="400" cy="455" r="34"/><circle class="petal" cx="125" cy="280" r="34"/>
+    <circle class="node" cx="400" cy="105" r="7"/><circle class="node" cx="675" cy="280" r="7"/>
+    <circle class="node" cx="400" cy="455" r="7"/><circle class="node" cx="125" cy="280" r="7"/>
+    <text x="400" y="109">P-N</text><text x="675" y="284">P-E</text><text x="400" y="459">P-S</text><text x="125" y="284">P-W</text>
+    <rect class="core" x="300" y="225" width="200" height="110" rx="18"/>
+    <text x="400" y="260">FRIDAY</text><text x="400" y="286">V · A · I · N</text><text class="small" x="400" y="312">L = LIFE / PHYSICS</text>
+    <text class="small" x="400" y="525">vibrant rays = links · dashed violet = physics relation · green = local node</text>
+  </svg>
+</main>
+</html>
