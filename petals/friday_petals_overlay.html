@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Friday · V.A.I.N.L · Petals Overlay</title>
+  <style>
+    :root { color-scheme: dark; --gold:#eab308; --cyan:#22d3ee; --green:#22c55e; --violet:#a78bfa; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; background:#080912; color:#e5e7eb; font:14px system-ui,sans-serif; display:grid; place-items:center; }
+    main { width:min(960px,96vw); padding:20px; }
+    h1 { margin:0 0 6px; color:var(--gold); font:600 20px ui-monospace,monospace; }
+    p { margin:0 0 14px; color:#9ca3af; }
+    .stage { position:relative; aspect-ratio:1.45; min-height:480px; overflow:hidden; border:1px solid #ffffff22; border-radius:18px; background:radial-gradient(circle,#17192e 0,#090a14 58%); }
+    svg { width:100%; height:100%; }
+    .torus { fill:none; stroke:var(--gold); stroke-width:2; opacity:.65; }
+    .sector { stroke:#ef444477; stroke-width:1; stroke-dasharray:5 7; }
+    .link { stroke:var(--cyan); stroke-width:2; opacity:.7; }
+    .petal { fill:#111b2c; stroke:var(--cyan); stroke-width:2; }
+    .node { fill:var(--green); }
+    .core { fill:#161625; stroke:var(--gold); stroke-width:3; }
+    text { fill:#e5e7eb; font-family:ui-monospace,monospace; font-size:13px; text-anchor:middle; }
+    .small { fill:#9ca3af; font-size:11px; }
+    .legend { display:flex; flex-wrap:wrap; gap:10px 18px; margin-top:12px; color:#9ca3af; font:12px ui-monospace,monospace; }
+    .legend span::before { content:""; display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:6px; background:var(--gold); }
+    .legend .p::before { background:var(--cyan); }
+    .legend .g::before { background:var(--green); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>FRIDAY · V.A.I.N.L · PETALS</h1>
+    <p>Alive torus overlay: outer identity, inner life vessel, distributed GPU petals.</p>
+    <section class="stage" aria-label="Friday Petals network overlay">
+      <svg viewBox="0 0 900 620" role="img">
+        <ellipse class="torus" cx="450" cy="310" rx="330" ry="210"/>
+        <ellipse class="torus" cx="450" cy="310" rx="250" ry="150" opacity=".35"/>
+        <path class="sector" d="M450 310 L780 310 M450 310 L285 128 M450 310 L285 492"/>
+        <text x="450" y="70" class="small">ALIVE TORUS · 3×120°</text>
+        <text x="675" y="285" class="small">120° A</text>
+        <text x="300" y="165" class="small">120° B</text>
+        <text x="300" y="465" class="small">120° C</text>
+        <path class="link" d="M450 310 L450 130 M450 310 L725 310 M450 310 L450 490 M450 310 L175 310"/>
+        <g class="petal"><circle cx="450" cy="112" r="38"/><circle cx="763" cy="310" r="38"/><circle cx="450" cy="508" r="38"/><circle cx="137" cy="310" r="38"/></g>
+        <g class="node"><circle cx="450" cy="112" r="7"/><circle cx="763" cy="310" r="7"/><circle cx="450" cy="508" r="7"/><circle cx="137" cy="310" r="7"/></g>
+        <text x="450" y="116">P-N</text><text x="763" y="314">P-E</text><text x="450" y="512">P-S</text><text x="137" y="314">P-W</text>
+        <rect class="core" x="340" y="250" width="220" height="120" rx="18"/>
+        <text x="450" y="285">FRIDAY</text>
+        <text x="450" y="312">V · A · I · N</text>
+        <text x="450" y="339" class="small">L = LIFE / LEARNING CORE</text>
+        <text x="450" y="590" class="small">Petals = distributed model blocks · CPU/GPU backend selectable</text>
+      </svg>
+    </section>
+    <div class="legend"><span>Friday / torus</span><span class="p">Petal network links</span><span class="g">GPU node markers</span></div>
+  </main>
+</body>
+</html>
