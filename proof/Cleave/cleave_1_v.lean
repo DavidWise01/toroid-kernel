@@ -17,7 +17,9 @@ def VStages : List VStage :=
    .v11Boundaries, .v12Invariant]
 
 def allVStagesPass (pass : VStage → Bool) : Bool :=
-  if h : ∀ stage, pass stage = true then true else false
+  pass .v1Shell && pass .v2Symmetry && pass .v3Body && pass .v4Zones &&
+  pass .v5Bridge && pass .v6Seals && pass .v7Containment && pass .v8SafeHold &&
+  pass .v9Isolation && pass .v10Balance && pass .v11Boundaries && pass .v12Invariant
 
 def J_Cleave1V : (VStage → Bool) → Bool := allVStagesPass
 
@@ -29,12 +31,7 @@ theorem cleave_1_v_accepts_all_pass (pass : VStage → Bool)
 theorem cleave_1_v_rejects_failed_stage (pass : VStage → Bool) (failed : VStage)
     (hfail : pass failed = false) :
     allVStagesPass pass = false := by
-  simp only [allVStagesPass]
-  split
-  · next hall =>
-      have htrue : pass failed = true := hall failed
-      simp [hfail] at htrue
-  · rfl
+  cases failed <;> simp [allVStagesPass, hfail]
 
 theorem cleave_1_v_has_twelve_stages : VStages.length = 12 := by
   rfl
