@@ -1,0 +1,23 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>0root.ai · Posi Hallway Overlay</title>
+<style>
+body{margin:0;background:#070b16;color:#e8faff;font:14px system-ui,sans-serif}
+main{max-width:700px;margin:auto;padding:32px 20px;text-align:center}
+h1{color:#70efff;font-weight:500;letter-spacing:.08em}
+.panel{border:1px solid #315e78;border-radius:14px;padding:18px;background:#0c1527}
+svg{width:100%;max-height:380px}.ring{fill:none;stroke:#315e78;stroke-width:2;stroke-dasharray:5 8}
+.inner{fill:none;stroke:#ff6fcf;stroke-width:2;opacity:.7}.node{fill:#70efff;stroke:#fff;stroke-width:2}
+.flow{fill:none;stroke:#70efff;stroke-width:3;stroke-dasharray:2 16;stroke-linecap:round}
+text{fill:#e8faff;font-size:14px}.muted{fill:#8fa8bf;font-size:11px}.status{color:#baffb0;font-family:monospace;margin-top:12px}
+</style>
+<main><h1>POSI HALLWAY</h1><div class="panel">
+<svg viewBox="0 0 700 430" role="img" aria-label="Read-only three-source Posi hallway overlay">
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#70efff"/></marker></defs>
+<ellipse class="ring" cx="350" cy="210" rx="225" ry="145"/><ellipse class="inner" cx="350" cy="210" rx="125" ry="75"/>
+<path class="flow" marker-end="url(#a)" d="M350 65 A145 225 0 1 1 349.9 65"/>
+<circle class="node" cx="350" cy="65" r="11"/><circle class="node" cx="155" cy="282" r="11"/><circle class="node" cx="545" cy="282" r="11"/>
+<text x="350" y="38" text-anchor="middle">0root.ai</text><text x="155" y="315" text-anchor="middle">DavidWise01</text><text x="545" y="315" text-anchor="middle">rgiskard01-fiddler</text>
+<text class="muted" x="350" y="202" text-anchor="middle">POSI · observation_ready</text><text class="muted" x="350" y="222" text-anchor="middle">L3 inverse · 120° triad</text><text class="muted" x="350" y="242" text-anchor="middle">read-only display</text></svg>
+<div class="status">● CONTEXT VERIFIED · 3 SOURCES · NO CONTROL PATH</div></div></main>
