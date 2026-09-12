@@ -1,0 +1,31 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Petals · Three-Source Torus Flow</title>
+<style>
+html,body{margin:0;height:100%;background:#070b16;color:#dffaff;font:14px system-ui,sans-serif}
+body{display:grid;place-items:center}main{width:min(92vw,760px);text-align:center}
+h1{color:#70efff;font-weight:500;letter-spacing:.08em}p{color:#9eb3c9}
+svg{width:100%;height:auto;border:1px solid #27445b;border-radius:16px;background:#0b1222}
+.ring{fill:none;stroke:#315e78;stroke-width:2;stroke-dasharray:5 8}
+.inner{fill:none;stroke:#ff6fcf;stroke-width:1.5;opacity:.7}
+.node{fill:#70efff;stroke:#fff;stroke-width:2}.label{fill:#dffaff;font-size:14px}
+.sub{fill:#8aa3bd;font-size:11px}
+.flow{fill:none;stroke:#70efff;stroke-width:3;stroke-linecap:round;stroke-dasharray:2 18}
+.pulse{fill:#fff3a8}
+</style>
+<main><h1>THREE-SOURCE TORUS FLOW</h1>
+<p>equal 120° spacing · R = 3/120 = 0.025 · L3 inverse orientation</p>
+<svg viewBox="0 0 760 560" role="img" aria-label="Three source torus flow">
+<defs><path id="loop" d="M380 110 A170 170 0 1 1 379.9 110"/>
+<marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#70efff"/></marker></defs>
+<ellipse class="ring" cx="380" cy="280" rx="250" ry="170"/><ellipse class="inner" cx="380" cy="280" rx="145" ry="92"/>
+<path class="flow" marker-end="url(#arrow)" d="M380 110 A170 170 0 1 1 379.9 110"/>
+<circle class="pulse" r="6"><animateMotion dur="5s" repeatCount="indefinite"><mpath href="#loop"/></animateMotion></circle>
+<line x1="380" y1="280" x2="380" y2="110" stroke="#5e7890" stroke-dasharray="3 5"/>
+<line x1="380" y1="280" x2="233" y2="365" stroke="#5e7890" stroke-dasharray="3 5"/>
+<line x1="380" y1="280" x2="527" y2="365" stroke="#5e7890" stroke-dasharray="3 5"/>
+<circle class="node" cx="380" cy="110" r="12"/><circle class="node" cx="233" cy="365" r="12"/><circle class="node" cx="527" cy="365" r="12"/>
+<text class="label" x="380" y="78" text-anchor="middle">0root.ai</text><text class="label" x="233" y="405" text-anchor="middle">DavidWise01</text><text class="label" x="527" y="405" text-anchor="middle">rgiskard01-fiddler</text>
+<text class="sub" x="380" y="301" text-anchor="middle">L3 ↺ inverse / upside-down</text><text class="sub" x="380" y="325" text-anchor="middle">private Posi channel · no network I/O</text>
+</svg></main>
